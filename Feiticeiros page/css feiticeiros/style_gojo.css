@@ -1,0 +1,184 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body{
+    background-color: #0b0c10;
+    color: #ffffff;
+    line-height: 1.6;
+}
+/* Header */
+header{
+      background: linear-gradient(90deg, #0f2027, #203a43, #2c5364);
+      padding: 20px;
+      text-align: center;
+      border-bottom: 5px solid rgb(110, 195, 229);
+      box-shadow: 0px 4px 10px rgba(110, 195, 229, 0.532);
+}
+
+header h1{
+    color: rgb(110, 195, 229);
+    font-size: 6vh;
+    -webkit-text-stroke: 2px rgb(74, 41, 41);
+}
+
+header p{
+    color: #b8d9f2;
+    font-size: 2.5vh;
+}
+
+
+/* Main */
+main{
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.image-section {
+    text-align: center;
+}
+
+.image-section img {
+    border: 3px solid #00c3ff;
+    max-width: 300px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 20px #00c3ff80;
+}
+
+.sumario {
+    background-color: #1a1a20;
+    padding: 20px;
+    border-left: 5px solid #a51111;
+    border-radius: 8px;
+    box-shadow: -5px 4px 10px #ff000057;
+}
+
+.sumario h2{
+  color: rgb(171, 36, 36);
+}
+
+.sumario p{
+    text-align: justify;
+}
+
+.feiticos {
+    background-color: #111;
+    margin-top: 6vh;
+    padding: 20px;
+    border-left: 5px solid #8818b8;
+    border-radius: 8px;
+    box-shadow: -5px 4px 10px #bf00ff57;
+}
+
+.feiticos h2 {
+    color: #bb5bbe;
+    margin-bottom: 10px;
+}
+
+ul {
+    list-style: square;
+    padding-left: 20px;
+}
+
+/* Botão Inicio */
+/* Botão para o inicio */
+/* From Uiverse.io by gharsh11032000 */ 
+/* primeiro botão */
+.animated-button {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 16px 36px;
+  border: 4px solid;
+  border-color: transparent;
+  font-size: 16px;
+  background-color: inherit;
+  border-radius: 100px;
+  font-weight: 600;
+  color: #1cb7ff;
+  box-shadow: 0 0 0 2px #416cc7;
+  cursor: pointer;
+  overflow: hidden;
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+}
+.botao_container {
+    display: flex;
+    justify-content: center;
+    margin: 60px 0 40px 0;
+}
+  /* Primeira seta */
+.animated-button svg {
+  position: absolute;   
+  width: 24px;
+  fill: #d02121;
+  z-index: 9;
+  transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.animated-button .arr-1 {
+  right: 16px;
+}
+
+.animated-button .arr-2 {
+  left: -25%;
+}
+
+.animated-button .circle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 20px;
+  height: 20px;
+  background-color: #7286d5;
+  border-radius: 50%;
+  opacity: 0;
+  transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.animated-button .text {
+  position: relative;
+  z-index: 1;
+  transform: translateX(-12px);
+  transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.animated-button:hover {
+  box-shadow: 0 0 0 12px transparent;
+  color: #212121;
+  border-radius: 12px;
+  box-shadow: 0 0 2px 3px #1c7bbf;
+}
+
+.animated-button:hover .arr-1 {
+  right: -25%;
+}
+
+.animated-button:hover .arr-2 {
+  left: 16px;
+}
+
+.animated-button:hover .text {
+  transform: translateX(12px);
+  color: rgb(0, 0, 0);
+}
+
+.animated-button:hover svg {
+  fill: #630871;
+}
+
+.animated-button:active {
+  scale: 0.95;
+  box-shadow: 0 0 0 4px #3157c2;
+}
+
+.animated-button:hover .circle {
+  width: 220px;
+  height: 220px;
+  opacity: 1;
+}

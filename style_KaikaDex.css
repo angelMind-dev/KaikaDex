@@ -1,0 +1,1169 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+  overflow-x: hidden;
+}
+
+body{
+    background-color: black;
+}
+
+                    /* Keyframes */
+@keyframes girar {
+    0% {
+      transform: translate(-50%, -50%) rotate(0deg);
+    }
+    100% {
+      transform: translate(-50%, -50%) rotate(360deg);
+    }
+}
+
+@keyframes vortexColor_Center {
+    0%, 100% {
+        box-shadow: 0 0 4px 10px #ba28a7;
+    }
+    50% {
+        box-shadow: 0 0 4px 7px #76326c;
+    }
+}
+
+@keyframes vortexMovement_left {
+    0% {
+      left: 0%;
+      box-shadow: 0 0 0 10px rgb(0, 0, 0);
+    }
+    50% {
+      left: 100%;
+      box-shadow: 0 0 0 10px rgb(255, 255, 255);
+    }
+    100% {
+      left: 0%;
+    box-shadow: 0 0 0 10px rgb(0, 0, 0);
+    }
+}
+  
+@keyframes vortexMovement_right {
+    0% {
+        left: 100%;
+        box-shadow: 0 0 0 10px rgb(255, 255, 255);
+      }
+      50% {
+        left: 0%;
+        box-shadow: 0 0 0 10px rgb(0, 0, 0);
+      }
+      100% {
+        left: 100%;
+        box-shadow: 0 0 0 10px rgb(255, 255, 255);
+      }
+}
+
+@keyframes slideDown{
+    0%{
+        transform: translateY(-35vh);
+        opacity: 0;
+        filter: blur(5px);
+        width: 30%; 
+        margin: 0px auto; 
+    }
+    50%{
+        transform: translateY(20px);
+    }
+    75%{
+        transform: translateY(-5px);
+    }
+    100%{
+        transform: translateY(0px);
+        opacity: 1;
+        width: 60%; 
+        margin: 15px auto; 
+    }
+}
+
+@keyframes slideDown_info{
+    0%{
+        transform: translateY(-20vh);
+        opacity: 0;
+        filter: blur(2px)
+    }
+    50%{
+        transform: translateY(20px);
+    }
+    75%{
+        transform: translateY(-5px);
+    }
+    100%{
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInLeft{
+    0%{
+        transform: translateX(-50vh);
+        opacity: 0;
+        filter: blur(2px);
+        rotate: 180deg;
+        width: 3rem;
+        height: 0.5rem;
+    }
+    50%{
+        transform: translateX(20%);
+    }
+    75%{
+        transform: translateX(-5%);
+    }
+    100%{
+        transform: translateX(0px);
+        opacity: 1;
+        rotate: 360deg;
+        width: 13rem;
+        height: 2.5rem;
+    }
+}
+
+@keyframes slideInRight{
+    0%{
+        transform: translateX(50vh);
+        opacity: 0;
+        filter: blur(2px);
+        rotate: -180deg;
+        padding: 0rem;
+        font-size: 0.2rem
+    }
+    50%{
+        transform: translateX(-55%);
+    }
+    75%{
+        transform: translateX(5%);
+    }
+    100%{
+        transform: translateX(0px);
+        opacity: 1;
+        rotate: -360deg;
+        padding: 0.7rem;
+        font-size: 1.2rem
+    }
+}
+
+@keyframes slideInTop{
+    0%{
+        transform: translateY(50vh);
+        opacity: 0;
+        filter: blur(2px)
+    }
+    50%{
+        transform: translateY(-10px);
+    }
+    75%{
+        transform: translateY(10px);
+    }
+    100%{
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes pulsar{
+    0%{
+        transform: scale(1)
+    }
+    50%{
+        transform: scale(1.2)
+    }
+    100%{
+        transform: scale(1)
+    }
+}
+
+@keyframes slide_feiticeiros_button{
+    0%{
+        transform: translateX(-55vh);
+        opacity: 0;
+        filter: blur(10px);
+        rotate: 180deg;
+        width: 5vh;
+        height: 2vh;
+    }
+    100%{
+        transform: translateX(0vh);
+        opacity: 1;
+        rotate: 360deg;
+        width: 25vh;
+        height: 9vh;
+    }
+}
+
+@keyframes slide_maldicoes_button{
+    0%{
+        transform: translateX(55vh);
+        rotate: 180deg;
+        opacity: 0;
+        filter: blur(10px);
+        width: 5vh;
+        height: 2vh;
+    }
+    100%{
+        transform: translateX(0vh);
+        opacity: 1;
+        rotate: 360deg;
+        width: 25vh;
+        height: 9vh;
+    }
+}
+
+@keyframes slide_botoes_paginas_h3{
+    0%{
+        transform: translateY(-10vh);
+        opacity: 0;
+        filter: blur(2px);
+    }
+    100%{
+        transform: translateX(0vh);
+        opacity: 1;
+    }
+}
+
+@keyframes header_anim{
+    0% {
+        transform: rotate(0deg) translateY(-20vh);
+        opacity: 0;
+        filter: blur(50px);
+    }
+    25% {
+        transform: rotate(5deg) translateY(-15vh);
+    }
+    50% {
+        transform: rotate(-5deg) translateY(-10vh);
+    }
+    75% {
+        transform: rotate(0deg) translateY(-5vh);
+    }
+    100% {
+        transform: rotate(0deg) translateY(0);
+        opacity: 0.9;
+    }
+}
+
+@keyframes header-text_anim{
+    0%, 100% {
+        transform: translateY(0px);
+      }
+    50% {
+    transform: translateY(-2px);
+    }
+}
+
+@keyframes text-sec-header_anim{
+    0% {
+        font-size: 0.5vh;
+      }
+    100% {
+        font-size: 3.2vh;
+      }
+}
+    
+                    /* Fechamento das Keyframes */
+                    /* inicio */
+.inicio{
+    border: 0.5vh solid rgb(103, 71, 139);
+    padding-bottom: 13vh;
+}
+                    /* Parte do header */
+header {
+    background: linear-gradient(to bottom, #180000, #030018);
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    border-bottom: 4px solid #9330d5;
+    padding: 1.5rem 0.5rem;
+    box-shadow: 0px 3px 15px #a553dc;
+    color: white;
+    animation: header_anim 1s ease forwards;
+}
+
+.header_text {
+    text-align: center;                         
+    width: 90%;
+    font-size: 3vh;
+    font-family: 'Cinzel', serif;
+}
+
+.header_text h1, h2{
+    animation: header-text_anim 2s ease-in-out infinite;
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.942);
+    -webkit-text-stroke: 0.1px rgba(255, 255, 255, 0.481);
+}
+
+
+.header_text_sub{
+    font-family: 'Cormorant Garamond', serif;
+}
+
+hr {
+    height: 4px;
+    background: linear-gradient(to right, #2613ba, #62115f, #901212);
+    border: 1px solid rgb(0, 0, 0);;
+}
+
+.logo_angelo{
+    width: 5.5%;
+    border-top-right-radius: 50%;
+    border-bottom-left-radius:50%;
+    border-top-left-radius: 35%;
+    border-bottom-right-radius: 35%;
+    position: absolute;
+    left: 0.5%;
+    transition: transform 0.5s ease, border-radius 0.5s ease;
+    z-index: 5;
+    box-shadow: 0px 0px 15px 0px rgba(246, 230, 159, 0.863);
+}
+
+.logo_angelo:hover {
+    transform: scale(170%) translate(16%, 20%);
+    border-radius: 50%;
+}
+
+                /* Botão creditos */
+.c-button {
+    color: #000000;
+    font-weight: 700;
+    font-size: 10px;
+    text-decoration: none;
+    padding: 0.9em 1.6em;
+    cursor: pointer;
+    position: absolute;
+    z-index: 1;
+    top: 0.5vh;
+}
+  
+  .c-button--gooey {
+    color: #000000;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border: 4px solid #9d0f0f;
+    border-radius: 0;
+    position: absolute;
+    transition: all 700ms ease;
+    left: 91%;
+    top: 36%;
+    box-shadow: 0 0 10px #ff000d;
+}
+                    /* Botão em si (antes do hover) */
+  .c-button--gooey .c-button__blobs {
+    height: 100%;
+    filter: url(#goo);
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: -3px;
+    right: -1px;
+    z-index: -1;
+}
+                    /* Parte de dentro do botão (depois do hover) */
+  .c-button--gooey .c-button__blobs div {
+    background-color: #902626;
+    width: 34%;
+    height: 100%;
+    border-radius: 100%;
+    position: absolute;
+    transform: scale(1.4) translateY(125%) translateZ(0);
+    transition: all 700ms ease;
+}
+  
+  .c-button--gooey .c-button__blobs div:nth-child(1) {
+    left: -5%;
+}
+  
+  .c-button--gooey .c-button__blobs div:nth-child(2) {
+    left: 30%;
+    transition-delay: 60ms;
+}
+  
+  .c-button--gooey .c-button__blobs div:nth-child(3) {
+    left: 66%;
+    transition-delay: 25ms;
+}
+  
+  .c-button--gooey:hover {
+    color: #ffffff;
+    box-shadow: 0 0px 40px #ff0000; 
+    border: 4px solid #902626;
+}
+  
+  .c-button--gooey:hover .c-button__blobs div {
+    transform: scale(1.4) translateY(0) translateZ(0);
+}
+
+                    /* Parte do main */
+
+body {
+    background: linear-gradient(to right, #011130, rgb(39, 21, 41), #250103);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    overflow-x: hidden;
+    position: relative; 
+}
+
+.vortex_moving_left,
+.vortex_moving_right {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    filter: blur(60px);
+    transform: translate(-50%, -50%);
+    animation: girar 8s linear infinite;
+    z-index: -2;
+    mix-blend-mode: screen;
+}
+
+.vortex_moving_left {
+    background: conic-gradient(#1d80f1, #f8f6f6, #9feffd);
+    border-radius: 50%;
+    animation: girar 8s linear infinite, vortexMovement_left 10s ease infinite;
+  }
+
+.vortex_moving_right {
+    background: conic-gradient(#6d0202, #000000, #b80404); ; 
+    border-radius: 50%;
+    animation: girar 8s linear infinite, vortexMovement_right 10s ease infinite;
+    animation-delay: 0, 0, -4s;
+}
+
+.vortex_center {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    width: 70vh;
+    height: 70vh;
+    background: conic-gradient(#750d59, #a33290, #d67dd0, #8913aa);
+    border-radius: 50%;
+    animation: girar 5s linear infinite, vortexColor_Center 2s ease infinite;
+    z-index: -1;
+    filter: blur(50px);
+}
+
+                /*Header secundário */
+
+.secondary-header {
+    background: linear-gradient(to right, #23236ab3, #642193, #761a1a);
+    color: white;
+    width: 60%; 
+    margin: 15px auto; 
+    border-radius: 100px; 
+    box-shadow: 0 0px 10px 5px #6107a2; 
+    padding: 0;
+    opacity: 0;
+    border: 3px solid #9500ff;
+    animation: slideDown 3s ease forwards;
+    animation-delay: 0.5s;
+}
+
+.text_sec_header{
+    display: inline-flex; 
+    justify-content: center;
+    align-items: center; 
+    padding: 0.5%; 
+    text-shadow: 0px 0px 3px rgb(255, 255, 255);
+    position: absolute;
+    left: 28.5vh;
+    top: 2.2vh;
+    font-size: 3vh;
+    font-family: 'Caveat', cursive;
+    -webkit-text-stroke: 0.1px rgba(128, 128, 128, 0.663);
+    animation: text-sec-header_anim 3.3s ease forwards;
+}
+
+.logo_header_img{
+    width: 22vh;
+    position: fixed;
+    left: 2.5%;
+    top: 2.2vh;
+    filter: drop-shadow(0 0 20px rgb(226, 208, 97));
+}
+
+.logo_kaikadex_second{
+    width: 10vh;
+    position: relative;
+    left: 87%;
+    transition: transform 0.5s ease, border-radius 0.5s ease, left 0.7s ease;
+    border-radius: 40%;
+    filter: drop-shadow(0 0 5px rgb(38, 38, 38));
+}
+
+.logo_kaikadex_second:hover{
+    transform: scale(2);
+    border-radius: 20%;
+    left: 90%;
+}
+
+                    /*Fim do Header secundário */
+                    /* Botão de pesquisa */
+.informe_div{
+    text-align: center;
+}
+
+.informe {
+    display: inline-flex; 
+    justify-content: center;
+    align-items: center; 
+    color: #fff8f9;
+    padding: 0.5rem 2rem; 
+    margin: 1rem;
+    animation: slideDown_info 3s ease forwards;
+    background-color: rgba(0, 0, 0, 0.5); 
+    box-shadow: 0px 0px 10px 3px rgb(0, 0, 0);
+    font-size: 3.5vh;
+    opacity: 0;
+    text-shadow: 0px 0px 3px rgb(255, 255, 255);
+    animation-delay: 1s;
+}
+
+.search_box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    margin: 1rem auto;
+}
+
+.search_box input {
+    width: 13rem;
+    height: 2.5rem;
+    padding: 0.5rem;
+    margin: 0.5rem;
+    border: 2px solid #4a007a;
+    border-radius: 0.5rem;
+    box-shadow: 0 0 10px 2px #4a007a;
+    transition: box-shadow 0.5s ease;
+    animation: slideInLeft 3s ease forwards;
+    opacity: 0;
+    animation-delay: 1s;
+}
+
+.search_box input:hover {
+    box-shadow: 0px 0px 12px 7px rgb(194, 41, 186);
+}
+
+.search_box button {
+    background-color: #4a007a;
+    border: none;
+    padding: 0.7rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    box-shadow: 0px 0px 10px 2px #4a007a;
+    transition: box-shadow 0.5s ease;
+    animation: slideInRight 3s ease forwards, pulsar 1.5s ease infinite;
+    opacity: 0;
+    animation-delay: 1s, 4s;
+}
+
+.search_box button:hover {
+    box-shadow: 0 0 15px 7px rgb(194, 41, 186);
+}
+
+.search_box button i {
+    font-size: 1.2rem;
+    color: white;
+}
+        /* Fim do botão de pesquisa*/
+        /* Botões paginas*/
+
+.botoes_paginas{
+    display: flex;
+    justify-content: center;
+    align-items: center;     
+    gap: 1rem;               
+    margin-top: 2rem;       
+    flex-wrap: wrap;     
+}
+
+.botoes_paginas_h3_div{
+    text-align: center;
+    animation: slide_botoes_paginas_h3 3s ease forwards;
+    opacity: 0;
+    animation-delay: 1s;
+}
+
+.botoes_paginas_h3{
+    font-size: 3vh;
+    display: inline-flex; 
+    justify-content: center;
+    align-items: center; 
+    color: #fff8f9;
+    padding: 0.7rem 2rem; 
+    background-color: rgba(0, 0, 0, 0.5); 
+    box-shadow: 0px 0px 10px 3px rgb(0, 0, 0);
+    text-shadow: 0px 0px 2px rgb(255, 255, 255);
+}
+
+        /* Botão Feiticeiros */
+
+    /* From Uiverse.io by StealthWorm */ 
+  
+.feiticeiros {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25vh;
+    height:9vh;
+    overflow: hidden;
+    background-size: 300% 300%;
+    cursor: pointer;
+    backdrop-filter: blur(1rem);
+    border-radius: 5rem;
+    transition: 0.5s;
+    animation: gradient_301 5s ease infinite, slide_feiticeiros_button 3s ease forwards;
+    border: double 4px transparent;
+    background-image: linear-gradient(#212121, #212121),
+        linear-gradient(
+        137.48deg,
+        #1565d5 10%,
+        #7343c2 45%,
+        #672096 67%,
+        #1738ae 87%
+        );
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    box-shadow: 0px 0px 10px 1px rgb(35, 24, 188);
+    margin-right: 10vh;
+    opacity: 0;
+    animation-delay: 1s;
+}
+
+#container-stars {
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    transition: 0.5s;
+    backdrop-filter: blur(1rem);
+    border-radius: 5rem;
+}
+
+strong {
+    z-index: 2;
+    font-family: "Avalors Personal Use";
+    font-size: 2.3vh;
+    letter-spacing: 5px;
+    color: #ffffff;
+    text-shadow: 0 0 4px white;
+}
+
+#glow {
+    position: absolute;
+    display: flex;
+    width: 12rem;
+}
+
+.circle {
+    width: 100%;
+    height: 30px;
+    filter: blur(2rem);
+    animation: pulse_3011 4s infinite;
+    z-index: -1;
+}
+
+.circle:nth-of-type(1) {
+    background: rgba(254, 83, 186, 0.636);
+}
+
+.circle:nth-of-type(2) {
+    background: rgba(142, 81, 234, 0.704);
+}
+
+.feiticeiros:hover #container-stars {
+    z-index: 1;
+    background-color: #212121;
+}
+
+.feiticeiros:hover {
+    transform: scale(1.1);
+}
+
+.feiticeiros:active {
+    border: double 4px #fe53bb;
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    animation: none;
+}
+
+.feiticeiros:active .circle {
+    background: #fe53bb;
+}
+
+#stars {
+    position: relative;
+    background: transparent;
+    width: 200rem;
+    height: 200rem;
+}
+
+#stars::after {
+    content: "";
+    position: absolute;
+    top: -10rem;
+    left: -100rem;
+    width: 100%;
+    height: 100%;
+    animation: animStarRotate 90s linear infinite;
+}
+
+#stars::after {
+    background-image: radial-gradient(#ffffff 1px, transparent 1%);
+    background-size: 50px 50px;
+}
+
+#stars::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -50%;
+    width: 170%;
+    height: 500%;
+    animation: animStar 60s linear infinite;
+}
+
+#stars::before {
+    background-image: radial-gradient(#ffffff 1px, transparent 1%);
+    background-size: 50px 50px;
+    opacity: 0.5;
+}
+
+@keyframes animStar {
+from {
+    transform: translateY(0);
+}
+
+to {
+    transform: translateY(-135rem);
+}
+}
+
+@keyframes animStarRotate {
+from {
+    transform: rotate(0);
+}
+
+to {
+    transform: rotate(360deg);
+}
+}
+
+@keyframes gradient_301 {
+0% {
+    background-position: 0% 50%;
+}
+
+50% {
+    background-position: 100% 50%;
+}
+
+100% {
+    background-position: 0% 50%;
+}
+}
+
+@keyframes pulse_3011 {
+0% {
+    transform: scale(0.75);
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.7);
+}
+
+70% {
+    transform: scale(1);
+    box-shadow: 0 0 0 10px rgba(0, 0, 0, 0);
+}
+
+100% {
+    transform: scale(0.75);
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+}
+}
+
+    /* Botão Maldições */
+
+    /* From Uiverse.io by StealthWorm */ 
+  
+.maldicoes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25vh;
+    overflow: hidden;
+    height: 9vh;
+    background-size: 300% 300%;
+    cursor: pointer;
+    backdrop-filter: blur(1rem);
+    border-radius: 5rem;
+    transition: 0.5s;
+    animation: gradient_301 5s ease infinite, slide_maldicoes_button 3s ease forwards;
+    border: double 4px transparent;
+    background-image: linear-gradient(#212121, #212121),
+        linear-gradient(
+        137.48deg,
+        #971313 10%,
+        #8c1b92 45%,
+        #b553c8 67%,
+        #d70000 87%
+        );
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    box-shadow: 0px 0px 10px 1px rgb(141, 10, 80);
+    opacity: 0;
+    animation-delay: 1s;
+}
+
+.maldicoes:hover #container-stars {
+    z-index: 1;
+    background-color: #212121;
+}
+
+.maldicoes:hover {
+    transform: scale(1.1);
+}
+
+.maldicoes:active {
+    border: double 4px #fe53bb;
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    animation: none;
+}
+
+.maldicoes:active .circle {
+    background: #fe53bb;
+}
+
+#stars_mald {
+    position: relative;
+    background: transparent;
+    width: 200rem;
+    height: 200rem;
+}
+
+#stars_mald::after {
+    content: "";
+    position: absolute;
+    top: -10rem;
+    left: -100rem;
+    width: 100%;
+    height: 100%;
+    animation: animStarRotate_mald 90s linear infinite;
+}
+
+#stars_mald::after {
+    background-image: radial-gradient(#ffffff 1px, transparent 1%);
+    background-size: 50px 50px;
+}
+
+#stars_mald::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -50%;
+    width: 170%;
+    height: 500%;
+    animation: animStar_mald 60s linear infinite;
+}
+
+#stars_mald::before {
+    background-image: radial-gradient(#ffffff 1px, transparent 1%);
+    background-size: 50px 50px;
+    opacity: 0.5;
+}
+
+@keyframes animStar_mald {
+from {
+    transform: translateY(0);
+}
+
+to {
+    transform: translateY(-135rem);
+}
+}
+
+@keyframes animStarRotate_mald {
+from {
+    transform: rotate(360deg);
+}
+
+to {
+    transform: rotate(0);
+}
+}
+
+@keyframes gradient_301 {
+0% {
+    background-position: 0% 50%;
+}
+
+50% {
+    background-position: 100% 50%;
+}
+
+100% {
+    background-position: 0% 50%;
+}
+}
+
+@keyframes pulse_3011 {
+0% {
+    transform: scale(0.75);
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.7);
+}
+
+70% {
+    transform: scale(1);
+    box-shadow: 0 0 0 10px rgba(0, 0, 0, 0);
+}
+
+100% {
+    transform: scale(0.75);
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+    flex-direction: row;
+}
+}
+
+        /* Fechamento do inicio */
+        /* Wiki */
+.wiki{
+    border: 0.5vh solid rgb(80, 27, 40);
+    position: absolute;
+    background: linear-gradient(to right, rgb(34, 4, 4), rgb(6, 6, 27));
+    padding: 2vh;
+}
+
+.wikitext_div{
+    text-align: center;
+    margin-bottom: 7vh;
+}
+
+@keyframes slideUp_wiki{
+    0%{
+        transform: translateY(20vh);
+        opacity: 0;
+        filter: blur(2px)
+    }
+    100%{
+        transform: translateY(0vh);
+        opacity: 1;
+    }
+}
+
+.wiki_h2 {
+    display: inline-flex; 
+    justify-content: center;
+    align-items: center; 
+    color: #fff8f9;
+    padding: 0.5rem 2rem; 
+    margin-top: 6vh;
+    animation: slideUp_wiki 3s ease forwards;
+    background-color: rgba(0, 0, 0, 0.5); 
+    box-shadow: 0px 0px 10px 3px rgb(0, 0, 0);
+    font-size: 3.5vh;
+    opacity: 0;
+    animation-delay: 1s;
+    text-shadow: 0px 0px 3px rgb(255, 255, 255);
+}
+
+.container{
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 4vh;
+    color: white;
+    font-size: 2.1vh;
+}
+.esquerda, .direita{
+    flex: 1;
+    text-align: justify;
+    min-width: 300px;
+}
+
+.hr_esquerda{
+    background: linear-gradient(to right, #193da0, #5c1212);
+    border: 1px solid black;
+}
+
+.hr_direita{
+    background: linear-gradient(to right, #63101b, #2b227a);
+    border: 1px solid black;
+}
+
+ol{
+    padding-left: 2vh;
+}
+
+li{
+    margin-top: 1vh;
+}
+
+.rodape{
+    color: white;
+    text-align: left;
+}
+
+/* Tablets e dispositivos médios (até 992px) */
+@media (max-width: 992px) {
+.secondary-header {
+    width: 90%;
+    padding: 1rem;
+}
+
+.text_sec_header {
+    position: static;
+    font-size: 3.5vh;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.logo_kaikadex_second {
+    width: 15vh;
+    display: block;
+    margin: 1rem auto;
+    position: static;
+}
+
+.logo_header_img{
+    width: 22vh;
+    display: block;
+    margin: 1rem auto;
+    position: static;
+}
+
+.container {
+    flex-direction: column;
+    align-items: center;
+}
+
+.esquerda, .direita {
+    width: 100%;
+    text-align: left;
+    padding: 1rem;
+}
+
+.search_box {
+    flex-direction: column;
+    gap: 1rem;
+    width: 100%;
+}
+
+.search_box input{
+    width: 90%;
+}
+
+.search_box button {
+    width: 80%;
+}
+
+.c-button {
+    position: absolute;
+    font-size: 1vh;
+    top: 17vh;
+    left: 75vh;
+}
+
+.logo_angelo {
+    width: 12%;
+}
+}
+
+/* Celulares e dispositivos pequenos (até 600px) */
+@media (max-width: 600px) {
+.header_text {
+    font-size: 2vh;
+    text-align: center;
+}
+
+.c-button {
+    position: absolute;
+    top: 1vh;
+    left: 50.5vh;
+    font-size: 1vh;
+}
+
+.secondary-header {
+    height: auto;
+    padding: 1rem;
+}
+
+.text_sec_header {
+    font-size: 2vh;
+    margin: 0 auto;
+}
+
+.logo_header_img{
+    width: 22vh;
+}
+
+
+.botoes_paginas {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.feiticeiros, .maldicoes {
+    width: 95%;
+    height: auto;
+    flex-direction: column;
+    padding: 1rem;
+}
+
+.wiki_h2 {
+    font-size: 2.3vh;
+    padding: 1rem;
+    text-align: center;
+}
+
+.informe {
+    font-size: 3vh;
+    padding: 0.5rem 1rem;
+}
+
+.search_box input {
+    width: 90%;
+    height: 2.2rem;
+}
+
+.search_box button {
+    width: 80%;
+    padding: 0.6rem;
+    font-size: 1.8vh;
+}
+
+strong {
+    font-size: 2.5vh;
+}
+
+.logo_angelo {
+    width: 13%;
+    margin: 1rem auto;
+    display: block;
+    top: 2vh;
+}
+}
+
+footer{
+    text-align: center;
+}
+
+/* scroll */
+.escondido {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 3s ease, transform 3s ease;
+}
+
+.wiki.animar {
+  animation: slideUp_wiki 0.5s ease forwards;
+}

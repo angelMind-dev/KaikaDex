@@ -1,0 +1,184 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body{
+    background-color: #0b0c10;
+    color: #ffffff;
+    line-height: 1.6;
+}
+/* Header */
+header{
+      background: linear-gradient(90deg, #210808, #3b0909, #250101);
+      padding: 20px;
+      text-align: center;
+      border-bottom: 5px solid rgb(152, 0, 0);
+      box-shadow: 0px 4px 10px rgba(255, 64, 64, 0.532);
+}
+
+header h1{
+    color: rgb(207, 25, 25);
+    font-size: 6vh;
+    -webkit-text-stroke: 2px rgb(84, 34, 34);
+}
+
+header p{
+    color: #ff6464;
+    font-size: 2.5vh;
+}
+
+
+/* Main */
+main{
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.image-section {
+    text-align: center;
+}
+
+.image-section img {
+    border: 3px solid #981d1d;
+    max-width: 300px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 20px #d95959a4;
+}
+
+.sumario {
+    background-color: #1a1a20;
+    padding: 20px;
+    border-left: 5px solid #da0303;
+    border-radius: 8px;
+    box-shadow: -5px 4px 10px #b9000057;
+}
+
+.sumario h2{
+  color: rgb(187, 28, 28);
+}
+
+.sumario p{
+    text-align: justify;
+}
+
+.feiticos {
+    background-color: #111;
+    margin-top: 6vh;
+    padding: 20px;
+    border-left: 5px solid #542020;
+    border-radius: 8px;
+    box-shadow: -5px 4px 10px #bf3e3e57;
+}
+
+.feiticos h2 {
+    color: #8d3131;
+    margin-bottom: 10px;
+}
+
+ul {
+    list-style: square;
+    padding-left: 20px;
+}
+
+/* Botão Inicio */
+/* Botão para o inicio */
+/* From Uiverse.io by gharsh11032000 */ 
+/* primeiro botão */
+.animated-button {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 16px 36px;
+  border: 4px solid;
+  border-color: transparent;
+  font-size: 16px;
+  background-color: inherit;
+  border-radius: 100px;
+  font-weight: 600;
+  color: #ffffff;
+  box-shadow: 0 0 0 2px #960000;
+  cursor: pointer;
+  overflow: hidden;
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+}
+.botao_container {
+    display: flex;
+    justify-content: center;
+    margin: 60px 0 40px 0;
+}
+  /* Primeira seta */
+.animated-button svg {
+  position: absolute;   
+  width: 24px;
+  fill: #bd0000;
+  z-index: 9;
+  transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.animated-button .arr-1 {
+  right: 16px;
+}
+
+.animated-button .arr-2 {
+  left: -25%;
+}
+
+.animated-button .circle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 20px;
+  height: 20px;
+  background-color: #350b0b;
+  border-radius: 50%;
+  opacity: 0;
+  transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.animated-button .text {
+  position: relative;
+  z-index: 1;
+  transform: translateX(-12px);
+  transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.animated-button:hover {
+  box-shadow: 0 0 0 12px transparent;
+  color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 0 2px 3px #a41c1c;
+}
+
+.animated-button:hover .arr-1 {
+  right: -25%;
+}
+
+.animated-button:hover .arr-2 {
+  left: 16px;
+}
+
+.animated-button:hover .text {
+  transform: translateX(12px);
+  color: rgb(255, 255, 255);
+}
+
+.animated-button:hover svg {
+  fill: #d50606;
+}
+
+.animated-button:active {
+  scale: 0.95;
+  box-shadow: 0 0 0 4px #931313;
+}
+
+.animated-button:hover .circle {
+  width: 220px;
+  height: 220px;
+  opacity: 1;
+}

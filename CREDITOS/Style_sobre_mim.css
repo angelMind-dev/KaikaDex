@@ -1,0 +1,152 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/* Keyframes */
+@keyframes slideInLeft{
+    from {transform: translateX(-100%);
+    opacity: 0;
+    }
+    to {transform: translateX(0);
+    opacity: 1;}
+}
+
+@keyframes slideInRight{
+    from {transform: translateX(100%);
+        opacity: 0;
+    }
+    to {transform: translateX(0);
+    opacity: 1;}
+}
+
+@keyframes slideInDown{
+    from {transform: translateY(-100%);
+    opacity: 0;}
+    to {transform: translateY(0);
+    opacity: 1;}
+}
+
+@keyframes flutuar {
+    0%{transform: translateY(0)
+    }
+    50%{transform: translateY(-3px)
+    }
+    100%{transform: translateY(0)}
+}
+
+/* Outros codigos */
+body {
+    background-color: rgb(255, 243, 225);
+}
+
+/* Header */
+header {
+    background-color: rgb(49, 42, 31);
+    color: rgb(211, 189, 153);
+    border: 0.5rem solid rgb(107, 95, 76);
+    display: flex; /* Ativa o flexbox */
+    align-items: center; /* Alinha os elementos verticalmente */
+    justify-content: center; /* Mantém o texto centralizado */
+    padding: 1rem 2rem;
+    position: relative; /* Permite posicionar elementos dentro dele */
+}
+
+h6 {
+    text-align: right; /* Textinho com o nome da escola no header */
+}
+
+header img {
+    width: 6.3rem;
+    border: 0.2rem ridge rgb(98, 73, 33);
+    position: absolute; /* Faz a imagem ficar fixa no canto */
+    left: 32px; /* Posiciona a imagem à esquerda */
+    border-radius: 10%;
+}
+
+header {
+    animation: slideInDown 3s ease forwards;
+}
+
+.header-texto {
+    text-align: center; /* Mantém o texto centralizado */
+    width: 100%; /* Faz o texto ocupar o espaço disponível */
+}
+
+.hr_header {
+    height: 4px;
+    background: linear-gradient(to right, rgb(32, 24, 12), rgb(100, 65, 4))
+}
+
+hr {
+    height: 4px;
+    background: linear-gradient(to right, rgb(197, 149, 71), rgb(70, 53, 24));
+}
+
+/* Inicio do Main */
+main {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.hr_direita {
+    height: 4px;
+    background: linear-gradient(to right, rgb(70, 53, 24), rgb(197, 149, 71))
+}
+
+.hr_esquerda {
+    height: 4px;
+    background: linear-gradient(to right, rgb(197, 149, 71), rgb(70, 53, 24))
+}
+h2 {
+    color: rgb(79, 53, 11);
+}
+
+p {
+    color: rgb(73, 48, 6)
+}
+
+.container {
+    display: flex;
+    align-items: flex-start; 
+    justify-content: space-between; 
+    gap: 4rem; 
+    padding: 2rem;
+    flex-wrap: wrap; 
+}
+
+.esquerda, .direita {
+    flex: 1; 
+    text-align: justify;
+    min-width: 300px; 
+}
+
+.esquerda {
+    animation: slideInLeft 3s ease forwards;
+}
+
+.direita {
+    animation: slideInRight 3s ease forwards;
+}
+
+
+.linha_div_conteiner {
+    height: 6px;
+    border: 3px groove rgb(120, 80, 5);
+    background: linear-gradient( rgb(255, 223, 0), rgb(105, 103, 3))
+}
+
+.colorido {
+    color: rgba(14, 40, 2, 0.675);
+    font-weight: bold; 
+    text-decoration: underline; 
+    cursor: pointer;
+}
+
+/* Rodape */
+.rodape {
+    color: rgba(24, 68, 4, 0.675);
+}

@@ -1,0 +1,58 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+@keyframes zoomIn{
+    from {transform: scale(0.1); opacity:(0)}
+    to {transform: scale(1); opacity:(1)}
+}
+
+body {
+    background-color: #F0EFE7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.subtitulos_botoes {
+    color: rgba(53, 37, 2, 0.597);
+}
+
+.cartao_perfil {
+    text-align: center;
+    padding: 3.5vh;
+    border-radius: 3vh;
+    background-color: #f4e7c8;
+    border: 1vh double rgb(219, 205, 174);
+    box-shadow: 0 1vh 2vh rgb(53, 37, 2);
+    animation: zoomIn 2s ease forwards;
+    transition: box-shadow 0.4s ease;
+}   
+
+.img_cartao_perfil {
+    width: 14vh;
+    border-radius: 100%;
+    margin-bottom: 1vh;
+}
+
+.cartao_perfil:hover {
+    box-shadow: 0 2vh 4vh rgb(53, 37, 2);
+}
+
+.icones_links a{
+        margin: 0 1vh;
+        text-decoration: none;
+}
+
+.infos_extras {
+    font-size: 2vh;
+    color: rgb(75, 60, 30);
+    margin: 0.553vh 0;
+    text-align: center;
+}
+
+.info_extra_titulo {
+    font-size: 3vh;
+    text-align: center;
+}

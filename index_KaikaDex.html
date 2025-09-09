@@ -1,0 +1,262 @@
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> KaikaDex - Seu Arquivo Amaldiçoado </title>
+    <link rel="stylesheet" href="style_kaikadex.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
+</head>
+<body>
+  
+                  <!-- Inicio -->
+    <section class="inicio">
+      <header>
+          <div class="header_text">
+              <h1> <i class="fa-regular fa-star"></i> Bem Vindo a KaikaDex <i class="fa-regular fa-star"></i> </h1>
+              <hr>
+              <h2 class="header_text_sub"> Seu arquivo amaldiçoado com todos os feiticeiros e maldições! </h2>
+          </div>
+          <img class="logo_angelo" src="imagens/logo_angelo.png" alt="Logo do desenvolvedor, Angelo de Paula - DEV Júnior">
+
+                      <!-- botão "creditos" --> 
+          <a href="CREDITOS/cartao_perfil.html" target="_blank">
+              <button class="c-button c-button--gooey"> 
+                  Creditos
+                  <div class="c-button__blobs"> 
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  </div>
+              </button>
+          </a>
+          <svg xmlns="http://www.w3.org/2000/svg" version="1.1" style="display: block; height: 0; width: 0;">
+              <defs>
+              <filter id="goo">
+                  <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur"></feGaussianBlur>
+                  <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="goo"></feColorMatrix>
+                  <feBlend in="SourceGraphic" in2="goo"></feBlend>
+              </filter>
+              </defs>
+          </svg>
+      </header>
+      <main>
+
+                  <!-- Vortex -->
+      <div class="vortex_moving_left"></div>
+      <div class="vortex_moving_right"></div>
+      <div class="vortex_center"></div>
+
+                  <!-- Header secundário -->
+      <section class="secondary-header">
+          <img class="logo_header_img" src="imagens/Jujutsu_Kaisen_logo.png" alt="Logo de JujutsuKaisen - O arquivo amaldiçoado de Jujutsu">
+          <div class="text_sec_header">
+            <h3> Seja o Mestre da Jujutsu: Conheça Todos os Combatentes </h3>
+          </div>
+          <img class="logo_kaikadex_second" src="imagens/logo_KaikaDex.png" alt="PNG do logo da KaikaDex - O arquivo amaldiçoado de Jujutsu">
+        </section>
+
+                  <!-- Texto "Informe" -->  
+      <div class="informe_div">
+          <h2 class="informe"> Busque o personagem aqui! </h2>
+      </div>
+
+                  <!-- Botão de pesquisa -->
+      <form class="search_box">
+              <input type="text" id="pesquisa" name="pesquisa" placeholder="Digite o nome ou número...">
+              <button class="botao">
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </button>
+      </form>
+
+      <!-- Botões paginas -->
+      <div class="botoes_paginas_h3_div">
+          <h3 class="botoes_paginas_h3"> Quer uma lista dos seus personagens favoritos? Claro! Escolha o tipo dele e o conheça aqui! </h3>
+      </div>
+      <section class="botoes_paginas">
+
+                  <!-- Feiticeiros -->
+                  <button onclick="window.open('pagina_feiticeiros.html')" type="button" class="feiticeiros">
+
+
+              <strong> Feiticeiros </strong>
+              <div id="container-stars">
+                <div id="stars"></div>
+              </div>
+
+              <div id="glow">
+                <div class="circle"></div>
+                <div class="circle"></div>
+              </div>
+            </button>
+
+                  <!-- Maldições -->
+                  <button onclick="window.open('pagina_maldicoes.html')" type="button" class="maldicoes">
+              <strong> Maldições </strong>
+              <div id="container-stars">
+                <div id="stars_mald"></div>
+              </div>
+
+              <div id="glow">
+                <div class="circle"></div>
+                <div class="circle"></div>
+              </div>
+            </button>
+
+        </section>
+      <div class="wikitext_div">
+        <h2 class="wiki_h2"> Quer uma wikizinha de JujutsuKaisen? Desce o scroll ai! </h2>
+      </div>
+
+                    <!-- Wiki -->
+    <div class="wiki escondido">
+      <section class="container">
+
+                  <!-- Resumo de Jujutsu Kaisen -->
+        <section class="esquerda">
+          <h3> <i class="fa-solid fa-book"></i> O que é Jujutsu Kaisen? </h3>
+          <hr class="hr_esquerda">
+            <p> 
+              Jujutsu Kaisen conta a história de Yuji Itadori, um estudante com grande força física que, ao tentar salvar Megumi Fushiguro, 
+              engole um dedo amaldiçoado e se torna o hospedeiro de Ryomen Sukuna, a maldição mais perigosa do mundo. <br> 
+              <br>
+              Para evitar sua execução, ele passa a estudar na Escola Técnica de Jujutsu, onde feiticeiros treinam para combater maldições 
+              usando energia amaldiçoada. Ao lado de Megumi, Nobara e do poderoso professor Satoru Gojo, Yuji enfrenta inimigos cada vez mais 
+              perigosos enquanto reflete sobre a vida, a morte e o valor de salvar os outros. A série mistura ação intensa, terror e 
+              drama emocional.
+            </p>
+        </section>
+
+                  <!-- Gege Akutami -->
+        <section class="direita">
+          <h3> <i class="fa-solid fa-pencil"></i> Gege Akutami (criador da obra)  </h3>
+          <hr class="hr_direita">
+            <p>
+              Gege Akutami é o(a) mangaká responsável por Jujutsu Kaisen, nascido(a) em 1992 no Japão. Pouco se sabe sobre sua vida 
+              pessoal, pois ele(a) mantém um perfil bastante discreto, evitando exposição pública e usando pseudônimos para preservar 
+              sua privacidade. Akutami começou sua carreira como assistente de outros mangakás e publicou alguns one-shots antes de 
+              criar Tokyo Metropolitan Magic Technical School, que serviu como prelúdio para Jujutsu Kaisen. <br> 
+              A série principal estreou em 2018 na Weekly Shonen Jump e rapidamente ganhou grande popularidade, com uma mistura de ação intensa, 
+              horror e personagens profundos. <br> 
+              <br>
+              Seu estilo é marcado por uma narrativa envolvente que combina temas sombrios e filosóficos com batalhas dinâmicas.
+            </p>
+        </section>
+        <section class="container">
+          <section class="esquerda">
+                  <!-- Studio MAPPA -->
+            <h3> <i class="fa-solid fa-microphone-lines"></i> Estudio MAPPA </h3>
+            <hr class="hr_esquerda">
+              <p>
+                O estúdio MAPPA, cujo nome completo é Maruyama Animation Produce Project Association, foi fundado em 14 de junho de 
+                2011 por Masao Maruyama, um veterano da indústria que também foi cofundador da Madhouse. A intenção de Maruyama era 
+                criar um estúdio com mais liberdade criativa, voltado para projetos ambiciosos e com alto padrão de animação. Com sede 
+                em Suginami, Tóquio, o estúdio cresceu rapidamente em popularidade e influência, especialmente nos últimos anos. O atual 
+                CEO é Manabu Otsuka, que assumiu o cargo em 2016. <br>
+                <br>
+                MAPPA ficou conhecido por produzir animes de grande impacto como Jujutsu Kaisen, um dos maiores sucessos shounen da 
+                nova geração, e por assumir a temporada final de Attack on Titan, após o estúdio Wit deixar a produção. Outros trabalhos 
+                marcantes incluem Chainsaw Man, que recebeu elogios pela animação fluida e cinematografia ousada, Dorohedoro, com seu 
+                visual sombrio e experimental, e Yuri!!! on Ice, que teve enorme sucesso global ao abordar a patinação artística com 
+                sensibilidade e realismo. <br> 
+                <br>
+                Apesar do prestígio e da qualidade técnica, o estúdio também tem sido alvo de críticas por suas condições de trabalho. 
+                Muitos animadores e funcionários já relataram sobrecarga de projetos, prazos extremamente curtos e uma gestão que 
+                prioriza quantidade e visibilidade, muitas vezes em detrimento da saúde da equipe. Ainda assim, MAPPA continua sendo 
+                um dos estúdios mais influentes da indústria de anime contemporânea.
+              </p>
+          </section>
+          <section class="direita">
+                  <!-- Cronologia -->
+            <h3> <i class="fa-solid fa-timeline"></i> Cronologia </h3>
+            <hr class="hr_direita">
+              <ol>
+                <li>
+                  <h4> Jujutsu Kaisen 0 (filme, Cap 0.1 - 0.4) </h4>
+                    Yuta Okkotsu lida com a maldição de Rika e entra na Escola Jujutsu.
+                </li>
+                <li>
+                  <h4> Arco de Introdução (Cap. 1 - 13) </h4>
+                    Yuji engole o dedo de Sukuna, conhece Gojo, Megumi e Nobara, e começa <br> 
+                    seu treinamento.
+                </li>
+                <li>
+                  <h4> Arco de Intercambio em Kyoto (Cap. 32 - 34) </h4>
+                    As escolas de Tóquio e Kyoto se enfrentam; maldições invadem o evento.
+                </li>
+                <li>
+                  <h4> Arco do Passado do Gojo (Cap. 65 - 79) </h4>
+                    Mostra a juventude de Gojo e sua missão com Geto e Riko Amanai.
+                </li>
+                <li> 
+                  <h4> Arco do Incidente de Shibuya (Cap. 79 - 136) </h4>
+                    As maldições atacam Shibuya; grandes lutas e o selamento de Gojo.
+                </li>
+                <li>
+                  <h4>Arco do Pós-Shibuya / Preparações (Cap. 137 - 158) </h4>
+                    Repercussões do caos em Shibuya e início do plano para o Culling Game.
+                </li>
+                <li>
+                  <h4> Arco do Culling Game (Cap. 159 - 222) </h4>
+                    Feiticeiros entram em um jogo mortal; muitas batalhas em várias colônias.
+                </li>
+                <li>
+                  <h4> Arco da Batalha Final (Cap. 223 - fim) </h4>
+                    Último confronto contra Sukuna e Kenjaku; mortes marcantes e clímax da série. <br>
+                    Morte de Gojo e de Sukuna.
+                </li>
+              </ol>
+          </section>
+        </section>
+        <section class="container">
+          <section class="esquerda">
+                  <!-- Sistema de Poder -->
+            <h3> <i class="fa-solid fa-explosion"></i> Sistema de Poder </h3>
+            <hr class="hr_esquerda">
+              <p>
+                Em Jujutsu Kaisen, o poder vem da energia amaldiçoada, que surge das emoções negativas das pessoas, como medo, raiva e 
+                tristeza. Feiticeiros aprendem a controlar essa energia para combater maldições, que são espíritos criados a partir dessas 
+                emoções negativas. Cada feiticeiro possui suas próprias Técnicas Amaldiçoadas, que são poderes únicos com regras e 
+                limitações específicas.<br>
+                <br>
+                Uma das habilidades mais poderosas é a Expansão de Domínio, que cria um espaço onde o usuário pode garantir que seus 
+                ataques atinjam o alvo com quase total certeza. Além disso, há técnicas especiais como o Kokusen (Flash Negro), que 
+                potencializa ataques físicos com energia amaldiçoada, e a Técnica Reversa, usada para curar ferimentos. <br>
+                O sistema exige não só força, mas também estratégia e inteligência, o que torna as batalhas muito dinâmicas e 
+                imprevisíveis.
+              </p>
+          </section>
+          <section class="direita">
+            <h3> <i class="fa-solid fa-eye"></i> Satoru Gojo (O Honrado) (merece uma parte só dele) </h3>
+            <hr class="hr_direita">
+              <p> 
+                Satoru Gojo é um dos personagens principais de Jujutsu Kaisen, conhecido por ser o feiticeiro mais poderoso da obra. 
+                Ele é professor na Escola Técnica de Jujutsu de Tóquio e possui duas habilidades raríssimas: o Seis Olhos e a técnica 
+                Ilimitado, que lhe permite manipular o espaço e criar o Infinito, tornando-o praticamente intocável. Apesar de sua 
+                força, Gojo tem uma personalidade brincalhona e arrogante, mas esconde um passado sério, marcado pela amizade perdida 
+                com Suguru Geto. Seu objetivo é mudar o mundo do jujutsu e proteger a nova geração de feiticeiros. <br>
+                Acabou ficando tão famoso no anime que virou um "simbolo" de Jujutsu Kaisen, fazendo os criadores do anime como "reféns"
+                do personagem, que, ao tirar ele do anime as vendas despencaram... E mostra como Satoru Gojo ganhou grande impacto na obra.
+              </p>
+          </section>
+        </section>
+          <p class="rodape"> 
+            Criado por: Ângelo de Paula Dias Morais Alves <br> 
+            2025 - São José do Rio Preto <br>
+            &copy Todos os direitos reservados
+          </p>
+        </main>
+    </section>
+  </div>
+
+  <!-- Script -->
+    <!-- scroll -->
+    <script src="script/scroll.js"></script>
+
+    <!-- Busca -->
+    <script src="script/busca.js"></script>
+
+</body>
+</html>

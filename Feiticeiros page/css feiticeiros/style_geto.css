@@ -1,0 +1,184 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    background-color: #0b0b0f;
+    color: #e6e6e6;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background: linear-gradient(90deg, #1b1b1b, #2c1e3f, #3d244d);
+    padding: 20px;
+    text-align: center;
+    border-bottom: 5px solid #a97c50;
+    box-shadow: 0px 4px 10px rgba(169, 124, 80, 0.5);
+}
+
+header h1 {
+    color: #d1b57c;
+    font-size: 6vh;
+    -webkit-text-stroke: 2px rgb(71, 71, 26);
+}
+
+header p {
+    color: #c0a9d8;
+    font-size: 2.5vh;
+}
+
+/* Main */
+main {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.image-section {
+    text-align: center;
+}
+
+.image-section img {
+    border: 3px solid #a97c50;
+    max-width: 300px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(169, 124, 80, 0.5);
+}
+
+.sumario {
+    background-color: #1b1a21;
+    padding: 20px;
+    border-left: 5px solid #82355b;
+    border-radius: 8px;
+    box-shadow: -5px 4px 10px #82355b50;
+}
+
+.sumario h2{
+  color: #c56695;
+}
+
+.sumario p{
+    text-align: justify;
+}
+
+.feiticos {
+    background-color: #16141a;
+    margin-top: 6vh;
+    padding: 20px;
+    border-left: 5px solid #5e2b97;
+    border-radius: 8px;
+    box-shadow: -5px 4px 10px #b37ff1a4;
+}
+
+.feiticos h2 {
+    color: #c79fe3;
+    margin-bottom: 10px;
+}
+
+ul {
+    list-style: square;
+    padding-left: 20px;
+}
+
+/* Botão Inicio */
+/* Botão para o inicio */
+/* From Uiverse.io by gharsh11032000 */ 
+/* primeiro botão */
+.animated-button {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 16px 36px;
+  border: 4px solid;
+  border-color: transparent;
+  font-size: 16px;
+  background-color: inherit;
+  border-radius: 100px;
+  font-weight: 600;
+  color: #fff41c;
+  box-shadow: 0 0 0 2px #bac741;
+  cursor: pointer;
+  overflow: hidden;
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+}
+.botao_container {
+    display: flex;
+    justify-content: center;
+    margin: 60px 0 40px 0;
+}
+  /* Primeira seta */
+.animated-button svg {
+  position: absolute;   
+  width: 24px;
+  fill: #cad66e;
+  z-index: 9;
+  transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.animated-button .arr-1 {
+  right: 16px;
+}
+
+.animated-button .arr-2 {
+  left: -25%;
+}
+
+.animated-button .circle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 20px;
+  height: 20px;
+  background-color: #c4ba6a;
+  border-radius: 50%;
+  opacity: 0;
+  transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.animated-button .text {
+  position: relative;
+  z-index: 1;
+  transform: translateX(-12px);
+  transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.animated-button:hover {
+  box-shadow: 0 0 0 12px transparent;
+  color: #212121;
+  border-radius: 12px;
+  box-shadow: 0 0 2px 3px #b3a539;
+}
+
+.animated-button:hover .arr-1 {
+  right: -25%;
+}
+
+.animated-button:hover .arr-2 {
+  left: 16px;
+}
+
+.animated-button:hover .text {
+  transform: translateX(12px);
+  color: rgb(0, 0, 0);
+}
+
+.animated-button:hover svg {
+  fill: #000000;
+}
+
+.animated-button:active {
+  scale: 0.95;
+  box-shadow: 0 0 0 4px #bcab24;
+}
+
+.animated-button:hover .circle {
+  width: 220px;
+  height: 220px;
+  opacity: 1;
+}
